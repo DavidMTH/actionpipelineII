@@ -25,4 +25,4 @@ jobs:
         run: npm run test:e2e
 
       - name: Run Cypress in Headless Mode
-        run: cypress run --headless
+        run: npx cypress run --headless
