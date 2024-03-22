@@ -7,7 +7,7 @@ describe('BMI Calculator', () => {
 
     cy.contains('Berechne').click()
 
-    cy.get("result").should('contain', 'Dein BMI beträgt:')
+    cy.get("result").should('contain', 'Dein BMI beträgt:', Number)
 
     cy.get("result").invoke('text').then(parseFloat).should('be.a', 'number')
     })
