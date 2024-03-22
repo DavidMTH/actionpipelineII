@@ -21,8 +21,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run cypress test
-        run: npm run test:e2e
-
       - name: Run Cypress in Headless Mode
         run: npx cypress run --headless
+
+      - name: Run cypress test
+        run: npm run test:e2e
